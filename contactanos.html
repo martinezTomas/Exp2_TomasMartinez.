@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="img/logo.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+    <title>contactanos</title>
+    <script src="js/valida.js"></script>
+    <script src="js/metodos.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="navbar-brand" href="#">
+            <img src="img/logogato.jfif" width="40px" height="40px">
+        </a>
+
+        <div class="collapse navbar-collapse" id="opciones">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link letra" href="Amigosfieles.html">Principal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link letra" href="articulos.html">Articulos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link letra" href="acerca de nosotros.html">Acerca de nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link letra" href="contactanos.html">Contactanos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link letra" href="api.html">Extras</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <br>
+
+    <div  class="container">
+        <h2 class="letra">Contactanos</h2>
+        <p class="letra">registrate para contactarte con nosotros y contar tu experiencia en la pagina</p>
+        <form id="mi-formulario" method="post">
+            <div class="form-group">
+                <label for="nom" class="letra">Nombre: </label>
+                <input type="text" id="nom" name="nom" required 
+                    minlength="3" placeholder="Ingrese su nombre" class="form-control letra" onmousemove="colorLightpink(this)" onmouseout="colorBlanco(this)" onchange="upperText(this)">
+            </div>
+
+            <div class="form-group">
+                <label for="correo" class="letra">Correo electrónico: </label>
+                <input type="email" id="correo" name="correo" required
+                    placeholder="cachupin@dog.cl" class="form-control letra" onmousemove="colorLightpink(this)" onmouseout="colorBlanco(this)" onchange="upperText(this)">
+            </div>
+
+            <div class="form-group">
+                <label for="fono" class="letra">Teléfono: </label>
+                <input type="number" id="fono" name="fono" required placeholder="9-9999-9999"
+                    minlength="9" class="form-control letra" onmousemove="colorLightpink(this)" onmouseout="colorBlanco(this)">
+            </div>
+
+            <div class="form-group">
+                <label for="genero" class="letra">Género</label>
+                <select id="genero" name="genero" required class="form-control letra" onmousemove="colorLightpink(this)" onmouseout="colorBlanco(this)">
+                    <option class="letra" value="0">Seleccione género</option>
+                    <option class="letra" value="1">Mujer</option>
+                    <option class="letra" value="2">Hombre</option>
+                    <option class="letra" value="3">Otro género</option>
+                </select>
+            </div>
+
+            <div class="form-group letra">
+                <label for="fecha" class="letra">Fecha de nacimiento: </label>
+                <input type="date" id="fecha" name="fecha" required 
+                    min="1940-01-01" class="form-control letra" onmousemove="colorLightpink(this)" onmouseout="colorBlanco(this)">
+            </div>
+
+            <div class="form-group">
+                <label for="carta" class="letra">Sugerencia/Comentario: </label>
+                <textarea id="carta" class="form-control letra" rows="7" placeholder="Escribe aqui tu sugerencia o comentario" onmousemove="colorLightpink(this)" onmouseout="colorBlanco(this)"></textarea>
+            </div>
+
+            <input type="submit" value="Enviar" id="enviar" class="btn btn-warning">
+            <input type="reset" value="Limpiar" id="limpiar" class="btn btn-danger">
+            
+        </form>
+
+    </div>
+
+    <br>
+    <br>
+
+    <footer>
+        <div class="container-fluid">
+            <p>&copy; 2023 Tomas Martinez. Todos los derechos reservados.</p>
+        </div>
+        <div class="logos">
+            <img src="img/Instagram.png" alt="...">
+            <img src="img/facebook.png" alt="...">
+            <img src="img/twitter.png" alt="...">
+        </div>
+    </footer>       
+
+   <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
